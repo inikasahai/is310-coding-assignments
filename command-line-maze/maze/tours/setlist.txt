@@ -1,0 +1,6 @@
+You’re almost there.
+
+The final track is hidden.
+Use a command that shows hidden files.
+
+Hint: ls -la
