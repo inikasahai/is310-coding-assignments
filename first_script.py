@@ -1,20 +1,18 @@
 favorite_movies = [
-    ("Lights Out", 2016),
-    ("Scream", 1996),
-    ("Superman", 1978),
-    ("Inside Out", 2015),
-    ("Zootopia 2", 2025)
+    {"title": "Lights Out", "year": 2016},
+    {"title": "Scream", "year": 1996},
+    {"title": "Superman", "year": 1978},
+    {"title": "Inside Out", "year": 2015},
+    {"title": "Zootopia 2", "year": 2025}
 ]
 
 def check_movie(movie):
-    title, year = movie
-    
-    if year < 2000:
-        print(f"{title}: This movie was released before 2000")
+    if movie["year"] < 2000:
+        print("This movie was released before 2000")
         return None
     else:
-        print(f"{title}: This movie was released after 2000")
-        return title
+        print("This movie was released after 2000")
+        return movie["title"]
 
 recent_movies = []
 
@@ -24,4 +22,4 @@ for movie in favorite_movies:
     if result is not None:
         recent_movies.append(result)
 
-print("Movies released after 2000:", recent_movies)
+print(recent_movies)
