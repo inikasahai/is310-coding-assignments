@@ -1,0 +1,11 @@
+{
+    "selected_api": "swapi",
+    "swapi_item": {
+        "name": "Luke Skywalker",
+        "birth_year": "19BBY",
+        "gender": "male",
+        "homeworld": "https://swapi.dev/api/planets/1/",
+        "url": "https://swapi.dev/api/people/1/"
+    },
+    "europeana_item": null
+}
